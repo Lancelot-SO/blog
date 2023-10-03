@@ -1,3 +1,17 @@
 .container {
-    background-color: brown;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    cursor: pointer;
 }
