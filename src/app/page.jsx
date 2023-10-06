@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import hero from "public/hero.png";
 import Image from "next/image";
+import Button from "@/components/Button/Button";
 
 const Home = () => {
   return (
@@ -14,10 +15,11 @@ const Home = () => {
           Turning your idea into reality. We bring together the teams from the
           global tech industry.
         </p>
-        <button className={styles.button}>See My works</button>
+        <Button url="/portfolio" text="See My works" />
       </div>
-      <div className={styles.item}></div>
-      <Image src={hero} alt="hero" className={styles.img} />
+      <div className={styles.item}>
+        <Image src={hero} alt="hero" className={styles.img} />
+      </div>
     </div>
   );
 };
